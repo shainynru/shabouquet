@@ -1273,45 +1273,7 @@
       }, 3000);
     }
 
-   /* ==========================================================================
-  // Mengubah hasil buket menjadi link & menyalinnya
-  function buatLinkBagikan() {
-    const url = new URL(window.location.origin + window.location.pathname);
-
-    // Ganti variabel di sebelah kanan sesuai variabel di kode HTML Anda
-    url.searchParams.set('bunga', JSON.stringify(dataBungaAnda)); 
-    url.searchParams.set('kertas', warnaKertasAnda);
-    url.searchParams.set('pesan', teksPesanAnda);
-
-    // Salin otomatis ke clipboard HP/Laptop
-    navigator.clipboard.writeText(url.toString()).then(() => {
-      alert("Link buket berhasil disalin! Silakan paste untuk mengirim.");
-    });
-  }
-
-  // Membaca link otomatis saat penerima membuka URL
-  window.addEventListener('DOMContentLoaded', () => {
-    const params = new URLSearchParams(window.location.search);
-
-    // Cek apakah URL berisi data buket kiriman
-    if (params.has('bunga')) {
-      // 1. Ambil data dari URL
-      const bungaKiriman = JSON.parse(params.get('bunga'));
-      const kertasKiriman = params.get('kertas');
-      const pesanKiriman = params.get('pesan');
-
-      // 2. Masukkan kembali ke variabel/fungsi tampilan di kode Anda
-      dataBungaAnda = bungaKiriman;
-      warnaKertasAnda = kertasKiriman;
-      teksPesanAnda = pesanKiriman;
-      
-      // Panggil fungsi update tampilan buket milik Anda di sini
-      fungsiRenderBuketAnda(); 
-
-      // 3. Sembunyikan panel tombol edit agar penerima hanya melihat hasilnya
-      document.getElementById('id-panel-edit-anda').style.display = 'none';
-    }
-  });
+   /*
 
   </script>
 </body>
