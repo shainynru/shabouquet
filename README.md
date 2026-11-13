@@ -1272,10 +1272,6 @@
         toast.classList.add('opacity-0', '-translate-y-2');
       }, 3000);
     }
-
-   /*
-
   </script>
 </body>
 </html>
-
